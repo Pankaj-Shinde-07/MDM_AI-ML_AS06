@@ -1,0 +1,56 @@
+PRACTICAL 6: CLUSTERING ALGORITHMS - EXECUTION OUTPUT LOG
+=====================================================================================
+Student: Pankaj Shinde (PRN: 202401100005, Roll No: 07)
+
+K-MEANS HYPERPARAMETER (k) ELBOW & SILHOUETTE SWEEP:
+  k =  2 | Inertia (WCSS):   258.70 | Silhouette Score: 0.4172
+  k =  3 | Inertia (WCSS):   152.70 | Silhouette Score: 0.4695
+  k =  4 | Inertia (WCSS):    98.26 | Silhouette Score: 0.5182
+  k =  5 | Inertia (WCSS):    53.51 | Silhouette Score: 0.5844
+  k =  6 | Inertia (WCSS):    45.39 | Silhouette Score: 0.5489
+  k =  7 | Inertia (WCSS):    39.81 | Silhouette Score: 0.4320
+  k =  8 | Inertia (WCSS):    34.72 | Silhouette Score: 0.4046
+  k =  9 | Inertia (WCSS):    32.84 | Silhouette Score: 0.3777
+  k = 10 | Inertia (WCSS):    28.45 | Silhouette Score: 0.4001
+
+=====================================================================================
+QUANTITATIVE CLUSTERING EVALUATION BENCHMARK TABLE:
+                             Algorithm  Clusters  Noise Points  Silhouette Score  Davies-Bouldin Index  Calinski-Harabasz Index
+                         K-Means (k=5)         5             0          0.584382              0.512642               315.689152
+Hierarchical Agglomerative (Ward, k=5)         5             0          0.574769              0.521372               301.946550
+              DBSCAN (eps=0.35, min=5)         5            27          0.634681              0.435878               354.501904
+          Gaussian Mixture Model (k=5)         5             0          0.583377              0.510375               307.778072
+
+=====================================================================================
+ACTIONABLE CUSTOMER PERSONA PROFILES (K-MEANS k=5):
+
+--- Cluster 1: Sensible / Budget (Low Inc, Low Spend) ---
+  Count: 85 customers (42.5% of total)
+  Mean Age: 43.2 years
+  Mean Annual Income: $57.1k
+  Mean Spending Score: 51.2 / 100
+
+--- Cluster 2: Impulsive / Careless (Low Inc, High Spend) ---
+  Count: 33 customers (16.5% of total)
+  Mean Age: 45.2 years
+  Mean Annual Income: $85.7k
+  Mean Spending Score: 16.9 / 100
+
+--- Cluster 3: Standard / Average (Mid Inc, Mid Spend) ---
+  Count: 35 customers (17.5% of total)
+  Mean Age: 44.5 years
+  Mean Annual Income: $93.2k
+  Mean Spending Score: 84.2 / 100
+
+--- Cluster 4: Affluent / Target (High Inc, High Spend) ---
+  Count: 23 customers (11.5% of total)
+  Mean Age: 39.7 years
+  Mean Annual Income: $29.2k
+  Mean Spending Score: 18.2 / 100
+
+--- Cluster 5: Careful / Savers (High Inc, Low Spend) ---
+  Count: 24 customers (12.0% of total)
+  Mean Age: 41.0 years
+  Mean Annual Income: $25.3k
+  Mean Spending Score: 75.5 / 100
+

@@ -1,0 +1,13 @@
+PRACTICAL 6: CLUSTERING ALGORITHMS - SAMPLE INPUT SPECIFICATION
+===========================================================================
+Dataset: Mall Customer Segmentation Dataset
+Number of Customer Records: 200
+Features Extracted for Clustering Analysis:
+  1. Annual Income (k$): Numerical, Range 15 to 140 k$
+  2. Spending Score (1-100): Numerical, Range 1 to 99
+Preprocessing: Standardized using StandardScaler (mean=0, variance=1)
+Clustering Algorithms Benchmarked:
+  - K-Means (k=2 to 10 with k-means++)
+  - Hierarchical Agglomerative Clustering (Ward Linkage, Euclidean metric)
+  - DBSCAN (Density-Based Spatial Clustering of Applications with Noise, eps=0.35, min_samples=5)
+  - Gaussian Mixture Model (EM soft probabilistic clustering, k=5)
